@@ -1,6 +1,8 @@
 # Comandos Github
 Inicializando git.
-`git init` 
+```Bash
+git init` 
+```
 Agregando todos los archivos que se han modificado.
 `git add .` 
 Envia los cambios del archivo al Sistema de Control de Versiones y puedes dejar un mensaje de descripción de los cambios.
