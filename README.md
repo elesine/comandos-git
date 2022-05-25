@@ -44,7 +44,7 @@ Te muestra todos los cambios históricos hechos incluyendo lineas de código, cu
 git show archivo.txt
 ```
 
-Ver la historia entera de un archivo.
+Ver la historia entera de commits de un archivo.
 ```Bash
 git log archivo.txt
 ```
