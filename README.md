@@ -33,7 +33,7 @@ Clona el repositorio, debes copiar la URL (puede ser HTTPS o SSH).
 git clone https://...
 ```
 _______________________
-### Puede usar los siguiente comando para más información de los commits
+### Puede usar los siguientes comando para más información de los commits
 
 Te muestra el estado.
 ```Bash
