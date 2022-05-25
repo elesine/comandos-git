@@ -48,3 +48,9 @@ Ver la historia entera de commits de un archivo.
 ```Bash
 git log archivo.txt
 ```
+
+Ver la diferencia entre 2 commit
+```Bash
+git diff id-commit-version-mas-antigua id-commit-version-mas-reciente
+```
+
