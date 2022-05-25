@@ -50,9 +50,20 @@ Ver la historia entera de commits de un archivo.
 git log archivo.txt
 ```
 
-Ver la diferencia entre 2 commit
+Ver la diferencia entre 2 commit.
 ```Bash
 git diff id-commit-version-mas-antigua id-commit-version-mas-reciente
+```
+_______________________
+### Actualizar el repositorio local con cambios del repositoio remoto
+
+El comando git pull se emplea para extraer y descargar contenido desde un repositorio remoto y actualizar al instante el repositorio local para reflejar ese contenido.
+```bash
+git pull origin master
+```
+--allow-unrelated-historiesque se usará en un evento raro que fusione las historias de dos proyectos que comenzaron sus vidas de forma independiente.
+```bash
+git pull origin master --allow-unrelated-histories
 ```
 ______________________
 
