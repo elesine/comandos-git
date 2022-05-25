@@ -41,10 +41,10 @@ git status
 
 Te muestra todos los cambios históricos hechos incluyendo lineas de código, cuándo y quién hizo los cambios.
 ```Bash
-git show
+git show archivo.txt
 ```
 
 Ver la historia entera de un archivo.
 ```Bash
-git log biografia.txt
+git log archivo.txt
 ```
