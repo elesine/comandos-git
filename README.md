@@ -14,28 +14,37 @@ Envia los cambios del archivo al Sistema de Control de Versiones y puedes dejar 
 git commit -m "descripcion de los cambios"
 ```
 
-Crea una nueva conexión a un repositorio remoto, poner nombre de origin al repositorio remoto para hacer referencia a una URL no tan sencilla. 
+Crea una nueva conexión a un repositorio remoto, poner nombre de origin al repositorio remoto para hacer referencia a una URL no tan sencilla.
 ```Bash
-git remote add origin https://....
+git remote add origin https://...
 ```
 
-Envía los cambios al repositorio remoto 
+Envía los cambios al repositorio remoto.
 ```Bash
 git push origin main
 ```
+_______________________
+
+### Copia tu repositorio de Git y añade los archivos 
+
+Clona el repositorio, debes copiar la URL (puede ser HTTPS o SSH).
+
+```bash
+git clone https://...
+```
 
 _______________________
-Te muestra el estado
+Te muestra el estado.
 ```Bash
 git status
 ``` 
 
-Te muestra todos los cambios historicos hechos incluyendo linead de código, cuándo y quién hizo los cambios
+Te muestra todos los cambios históricos hechos incluyendo lineas de código, cuándo y quién hizo los cambios.
 ```Bash
 git show
 ```
 
-Ver la historia entera de un archivo
+Ver la historia entera de un archivo.
 ```Bash
 git log biografia.txt
 ```
