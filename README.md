@@ -1,4 +1,4 @@
-# Comandos Github
+# Comandos Git
 Inicializando git.
 ```Bash
 git init
