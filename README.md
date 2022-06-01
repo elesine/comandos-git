@@ -56,14 +56,19 @@ $ git diff id-commit-version-mas-antigua id-commit-version-mas-reciente
 ```
 _______________________
 ### Actualizar el repositorio local con cambios del repositoio remoto
+Para descargar contenido de un repositorio remoto, los comandos git pull y git fetch están disponibles para realizar esta tarea. 
 
-El comando git pull se emplea para extraer y descargar contenido desde un repositorio remoto y actualizar al instante el repositorio local para reflejar ese contenido.
+Puedes considerar git fetch como la versión segura de los dos comandos. Este comando descarga el contenido remoto, pero no actualiza el estado de trabajo del repositorio local, por lo que tu trabajo actual no se verá afectado. 
 ```bash
-$ git pull origin master
+$ git fetch origin main
 ```
---allow-unrelated-historiesque se usará en un evento raro que fusione las historias de dos proyectos que comenzaron sus vidas de forma independiente.
+git pull constituye una alternativa más agresiva, ya que descarga el contenido remoto a la rama local activa e inmediatamente ejecuta git merge para crear un commit fusionado con el nuevo contenido remoto.
 ```bash
-$ git pull origin master --allow-unrelated-histories
+$ git pull origin main
+```
+--allow-unrelated-histories, se usará en un evento raro que fusione las historias de dos proyectos que comenzaron sus vidas de forma independiente.
+```bash
+$ git pull origin main --allow-unrelated-histories
 ```
 ______________________
 ### Eliminado archivos de Staging area
