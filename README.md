@@ -60,7 +60,10 @@ Para descargar contenido de un repositorio remoto, los comandos git pull y git f
 
 Puedes considerar git fetch como la versión segura de los dos comandos. Este comando descarga el contenido remoto, pero no actualiza el estado de trabajo del repositorio local, por lo que tu trabajo actual no se verá afectado. 
 ```bash
-$ git fetch origin main
+$ git fetch <remote>
+```
+```bash
+$ git fetch <remote> <branch>
 ```
 git pull constituye una alternativa más agresiva, ya que descarga el contenido remoto a la rama local activa e inmediatamente ejecuta git merge para crear un commit fusionado con el nuevo contenido remoto.
 ```bash
@@ -70,7 +73,31 @@ $ git pull origin main
 ```bash
 $ git pull origin main --allow-unrelated-histories
 ```
-______________________
+### Branch(ramas)
+Crear una nueva rama 
+```bash
+$ git branch new_branch
+```
+Ver las ramas locales existentes
+```bash
+$ git branch 
+```
+ver las ramas locales y remotas existentes
+```bash
+$ git -r branch
+```_________________________
+### Checkout(extraer)
+En términos de Git, "checkout" (extraer) es el acto de cambiar entre diferentes versiones de una entidad objetivo. El comando git checkout opera sobre tres entidades distintas: archivos, confirmaciones y ramas.
+
+Cambio de rama
+```bash
+$ git checkout <branchname>
+```
+Crear una rama y cmabiar a ella al instante.
+```bash
+$ git checkout -b ＜new-branch＞
+```
+_________________________
 ### Eliminado archivos de Staging area
 Mueve los archivos que le indiquemos al estado Untracked, lo saca de la zona de Staging.
 ```bash
