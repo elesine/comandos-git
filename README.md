@@ -85,7 +85,8 @@ $ git branch
 ver las ramas locales y remotas existentes
 ```bash
 $ git -r branch
-```_________________________
+```
+_________________________
 ### Checkout(extraer)
 En términos de Git, "checkout" (extraer) es el acto de cambiar entre diferentes versiones de una entidad objetivo. El comando git checkout opera sobre tres entidades distintas: archivos, confirmaciones y ramas.
 
