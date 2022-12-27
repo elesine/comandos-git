@@ -135,12 +135,14 @@ $ git config --global core.autocrlf false
 ```bash
 $ git config core.autocrlf false
 ```
+___________________________________
 
-### merge
+### Merge
 Ir a mi rama con checkout primero 
 ```bash
 $ git merge new-feature
 ```
+___________________________________
 ### Cherry Pick 
 git cherry-pick es un potente comando que permite que las confirmaciones arbitrarias de Git se elijan por referencia y se añadan al actual HEAD de trabajo.
 En este caso, imaginemos que queremos aplicar la confirmación f a la rama main
