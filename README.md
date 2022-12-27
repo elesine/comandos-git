@@ -94,7 +94,7 @@ Cambio de rama
 ```bash
 $ git checkout <branchname>
 ```
-Crear una rama y cmabiar a ella al instante.
+Crear una rama y cambiar a ella al instante.
 ```bash
 $ git checkout -b ＜new-branch＞
 ```
@@ -135,3 +135,17 @@ $ git config --global core.autocrlf false
 ```bash
 $ git config core.autocrlf false
 ```
+
+### merge
+Ir a mi rama con checkout primero 
+```bash
+$ git merge new-feature
+```
+### Cherry Pick 
+git cherry-pick es un potente comando que permite que las confirmaciones arbitrarias de Git se elijan por referencia y se añadan al actual HEAD de trabajo.
+En este caso, imaginemos que queremos aplicar la confirmación f a la rama main
+git checkout main
+```
+$ git cherry-pick f
+```
+
